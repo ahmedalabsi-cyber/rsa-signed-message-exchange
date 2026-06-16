@@ -10,7 +10,7 @@ def aliceSender():
         alice_private_key=rsa.PrivateKey.load_pkcs1(f.read())
         print("Alice's private key has been loaded successfuly  ")
         
-    message=" Hello bob, this is me alice i wanted to share with you this secret information. [20230002922,20230003483,20230003072,20230003830]"
+    message=" Hello bob, this is me alice i wanted to share with you this secret information. [10101010]"
     
     
     hash_of_message=hashlib.sha256(message.encode()).hexdigest()
